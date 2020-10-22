@@ -456,7 +456,7 @@ myGIOmap.prototype.addPolygons = function(ly, chartElement){
 	
 	polygons
 		.merge(newPolygons)
-		.style('stroke', 'gray')
+		.style('stroke', '#B3B3B3')
 	    .attr("d", path); 
 	
 	if(ly.options.setPolygonZoom != null){
@@ -550,7 +550,7 @@ myGIOmap.prototype.addResourcePolygons = function(ly, chartElement){
 			.attr('clip-path', 'url(#' + chartElement.id + 'clip'+ ')')
 			.attr('class', 'zip')
 			.style('fill', 'none')
-			.style('stroke', 'gray')
+			.style('stroke', '#B3B3B3')
 			.style('stroke-width', '0.02px')
 			.style('opacity', 0)
 			.on('mouseover', hoverTip)
@@ -867,7 +867,7 @@ myGIOmap.prototype.addZipChloropleth = function(ly, chartElement){
 		.attr('clip-path', 'url(#' + chartElement.id + 'clip'+ ')')
 		.attr('class', 'zip')
 		.style('fill', 'none')
-		.style('stroke', 'gray')
+		.style('stroke', '#B3B3B3')
 		.style('stroke-width', '0.02px')
 		.style('opacity', 0)
 		//.on('mouseover', hoverTip)
