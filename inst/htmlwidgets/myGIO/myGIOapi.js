@@ -305,7 +305,7 @@ myGIOmap.prototype.processScales = function(lys, options){
 	var colorMean = d3.mean(data, function(d) { return d[dataValue]; });
 	
 	this.colorScale = d3.scaleLinear()
-		.range(["#e54e4d", '#faab93', "#ffffe0"])
+		.range(['#ffffe0', '#faab93', '#e54e4d'])
 		.domain([colorMin, colorMean, colorExtent[1]]);
 	
 	this.legendScale = d3.scaleLinear()
@@ -1246,10 +1246,10 @@ myGIOmap.prototype.updateLegend = function(){
 	    .attr("x2", "100%")
 	    .attr("y2", "100%")
 	    .attr("spreadMethod", "pad");
-		
+
 	legend.append("stop")
       .attr("offset", "0%")
-      .attr("stop-color", '#e54e4d')
+      .attr("stop-color", '#ffffe0')
       .attr("stop-opacity", 1);
 
     legend.append("stop")
@@ -1259,7 +1259,7 @@ myGIOmap.prototype.updateLegend = function(){
 
     legend.append("stop")
       .attr("offset", "100%")
-      .attr("stop-color", '#ffffe0')
+      .attr("stop-color", '#e54e4d')
       .attr("stop-opacity", 1);
 	  
 	key.append('rect')
