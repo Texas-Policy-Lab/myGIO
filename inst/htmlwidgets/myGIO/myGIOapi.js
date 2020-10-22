@@ -305,7 +305,7 @@ myGIOmap.prototype.processScales = function(lys, options){
 	var colorMean = d3.mean(data, function(d) { return d[dataValue]; });
 	
 	this.colorScale = d3.scaleLinear()
-		.range(["#fff970", "#ffbd00", "#a99b00"])
+		.range(["#e54e4d", "#ffffe0"])
 		.domain([colorMin, colorMean, colorExtent[1]]);
 	
 	this.legendScale = d3.scaleLinear()
